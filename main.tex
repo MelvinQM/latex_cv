@@ -1,0 +1,208 @@
+% a mashup of hipstercv, friggeri and twenty cv
+% https://www.latextemplates.com/template/twenty-seconds-resumecv
+% https://www.latextemplates.com/template/friggeri-resume-cv
+
+\documentclass[lighthipster]{simplehipstercv}
+\usepackage[utf8]{inputenc}
+\usepackage[default]{raleway}
+\usepackage[margin=1cm, a4paper]{geometry}
+
+
+%------------------------------------------------------------------ Variablen
+
+\newlength{\rightcolwidth}
+\newlength{\leftcolwidth}
+\setlength{\leftcolwidth}{0.23\textwidth}
+\setlength{\rightcolwidth}{0.75\textwidth}
+
+%------------------------------------------------------------------
+\title{Melvin Moes CV}
+\author{\LaTeX{} Melvin Moes}
+\date{November 2025}
+
+\pagestyle{empty}
+\begin{document}
+
+
+\thispagestyle{empty}
+%-------------------------------------------------------------
+
+\section*{Start}
+
+\simpleheader{headercolour}{}{Melvin Moes}{}{white}
+
+
+
+%------------------------------------------------
+
+% this has to be here so the paracols starts..
+\subsection*{}
+\vspace{4em}
+
+\setlength{\columnsep}{1.5cm} %space between body and 
+\columnratio{0.23}[0.75]
+\begin{paracol}{2}
+\hbadness5000
+\paracolbackgroundoptions
+
+
+\footnotesize
+{\setasidefontcolour
+\flushright
+\begin{center}
+    \roundpic{assets/images/melvin.png}
+\end{center}
+
+\bg{cvgreen}{white}{Over mij}\\[0.5em]
+
+{\footnotesize
+Ik ben erg enthousiast om meer te leren over softwareontwikkeling, 
+embedded programmeren en electrical engineering
+}
+\bigskip
+
+\bg{cvgreen}{white}{Personalia} \\[0.5em]
+Melvin Moes
+Nederlands
+18-07-2001
+
+\bigskip
+
+\bg{cvgreen}{white}{Specialisaties} \\[0.5em]
+
+Backend development \\ Embedded programming \\ Web development 
+
+\bigskip
+
+\bigskip
+
+\bg{cvgreen}{white}{Interesses}\\[0.5em]
+
+Volleybal \& Boulderen\\
+Microcontrollers\\
+3D modeling\\
+
+
+\vspace{4em}
+
+\infobubble{\faEnvelopeO}{cvgreen}{white}{melv5@live.nl}
+\infobubble{\faGithub}{cvgreen}{white}{MelvinQM}
+\infobubble{\faGlobe}{cvgreen}{white}{\href{https://melvinmoes.com}{melvinmoes.com}}
+
+\phantom{turn the page}
+
+\phantom{turn the page}
+}
+%-----------------------------------------------------------
+\switchcolumn
+
+\small
+
+\begin{minipage}[t]{0.48\textwidth}
+\section*{Opleiding}
+\begin{tabular}{r p{0.65\textwidth} c}
+    \cvdegree{22-26}{HBO-ICT Technische Informatica Bachelor}{Verwachte 
+    afstudeerdatum: juli 2026}{Amsterdam \color{headerblue}}{}{assets/images/hva.png} \\
+\end{tabular}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.2\textwidth}
+
+
+    
+\section*{Vaardigheden}
+\textbf{Initiatief}\\
+\textbf{Leiding nemen}\\
+\textbf{Samenwerken}\\
+\textbf{Taakgericht}\\
+\textbf{Leergierig}\\
+
+\end{minipage}
+
+\section*{Werk ervaring}
+\begin{tabular}{r| p{0.5\textwidth} c}
+    \cvevent{08/23--Heden}{Research \& Development -- Chipsoft}{Fullstack -- Parttime}{Amsterdam \color{cvred}}{Ontwikkeld aan 
+    diverse webapplicaties en actief bijgedragen aan code reviews binnen het team.
+    
+    Ik heb onder andere gewerkt met \textbf{C\#} en \textbf{Blazor}. 
+    Daarnaast heb ik ervaring opgedaan met fundamentele softwarearchitectuurprincipes, 
+    waaronder \textbf{Domain-Driven Design (DDD)} en \textbf{Clean Architecture.}
+
+    \par\vspace{0.5em}
+    \textbf{Stageperiode (02/26--06/26):} Tijdens mijn stage binnen ChipSoft heb ik mij 
+    gericht op het ontwikkelen van een geavanceerde zoekoplossing met behulp van 
+    \textbf{Elasticsearch}. Hiervoor heb ik een volledige containerized deployment ontworpen met \textbf{Docker}, 
+    inclusief een ingestion pipeline die met behulp van machine learning-technieken 
+    semantic search mogelijk maakte.}{assets/images/chipsoft.png} \\
+    
+    \cvevent{02/24--07/24}{Research \& Development -- Van Berge Henegouwen}{Stagair -- Fulltime}{Amsterdam \color{cvred}}{Tijdens mijn 
+    stage heb ik gewerkt aan het maken van een product van begin tot eind. Ik heb hier gewerkt aan 3D graphics met \textbf{Three.js}, 
+    webdevelopment met \textbf{Vue.js} en \textbf{Typescript} en embedded programmeren met gebruik van het \textbf{Arduino framework}}{vbh.png} \\
+    
+    \cvevent{01/20--Heden}{Helpdesk/Administratie -- Compuclub}{Parttime}{Zaandam \color{cvred}}{Mijn bezigheden bij 
+    Compuclub zijn het bijhouden van al het mailverkeer, factureren en het ontwikkelen van applicaties voor het ondersteuenen van de helpdesk
+    in \textbf{PHP}}{assets/images/compuclub.png} \\
+\end{tabular}
+\vspace{3em}
+
+\bigskip
+\bigskip
+\bigskip
+\bigskip
+
+\begin{minipage}[t]{0.3\textwidth}
+\section*{Certificaten}
+\begin{tabular}{>{\footnotesize\bfseries}r >{\footnotesize}p{0.55\textwidth}}
+    2022 & Cum laude Propedeuse Technische Informatica  \\
+\end{tabular}
+\bigskip
+
+\section*{Talen}
+\begin{tabular}{l | ll}
+\textbf{Nederlands} & {\phantom{x}\footnotesize Moedertaal} \\
+\textbf{Engels} & {\phantom{x}\footnotesize Vloeiend} \\
+\end{tabular}
+\bigskip
+
+
+\end{minipage}\hfill
+\begin{minipage}[t]{0.3\textwidth}
+
+\section*{Programming}
+
+\textbf{Specialisatie:} C/C++, C\# \\[0.5em]
+
+\textbf{Ervaring met:}
+\begin{itemize}
+    \item Python
+    \item TypeScript / Javascript
+    \item HTML \& CSS
+    \item Java
+    \item PHP
+\end{itemize}
+
+
+\end{minipage}
+
+\bigskip
+\bigskip
+\bigskip
+\bigskip
+
+
+
+\vfill{} % Whitespace before final footer
+
+%----------------------------------------------------------------------------------------
+%	FINAL FOOTER
+%----------------------------------------------------------------------------------------
+\setlength{\parindent}{0pt}
+\begin{minipage}[t]{\leftcolwidth}
+\end{minipage}%
+\begin{minipage}[t]{\rightcolwidth}
+\begin{center}\fontfamily{\sfdefault}\selectfont \color{black!70}
+{\small Melvin Moes \icon{\faEnvelopeO}{cvgreen}{} melv5@live.nl \icon{\faMapMarker}{cvgreen}{} Zaandam \icon{\faPhone}{cvgreen}{} +31 611279601} \\
+\icon{\faAt}{cvgreen}{} \url{https://www.linkedin.com/in/melvin-moes-49652a290/}
+\end{center}
+\end{minipage}
+\end{paracol}
+\end{document}
