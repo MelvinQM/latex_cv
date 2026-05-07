@@ -7,8 +7,7 @@
 \usepackage[default]{raleway}
 \usepackage[margin=1cm, a4paper]{geometry}
 
-
-%------------------------------------------------------------------ Variablen
+%------------------------------------------------------------------
 
 \newlength{\rightcolwidth}
 \newlength{\leftcolwidth}
@@ -22,188 +21,176 @@
 
 \pagestyle{empty}
 \begin{document}
+    \section*{Start}
+    \simpleheader{headercolour}{}{Melvin Moes}{}{white}
+    %------------------------------------------------
+
+    % this has to be here so the paracols starts..
+    \subsection*{}
+    \vspace{4em}
+
+    \setlength{\columnsep}{1.5cm} %space between body and 
+    \columnratio{0.23}[0.75]
+    \begin{paracol}{2}
+        \hbadness5000
+        \paracolbackgroundoptions
+        \footnotesize
+        {\setasidefontcolour
+            \flushright
+            \begin{center}
+                \roundpic{assets/images/melvin.png}
+            \end{center}
+
+            \bg{cvgreen}{white}{Over mij}\\[0.5em]
+
+            {\footnotesize
+                Ik ben erg leergierig en enthousiast over ICT. Ik ben altijd op zoek naar nieuwe technologieën 
+                en tools om mijn vaardigheden verder te ontwikkelen. Mijn interesse ligt vooral bij embedded programmeren, 
+                maar ook softwareontwikkeling in het algemeen spreekt mij erg aan.
+            }
+            \bigskip
+
+            \bg{cvgreen}{white}{Personalia} \\[0.5em]
+            Melvin Moes
+            Nederlands
+            18-07-2001
+
+            \bigskip
+
+            \bg{cvgreen}{white}{Specialisaties} \\[0.5em]
+
+            Backend development \\ Embedded programming \\ Web development 
+
+            \bigskip
+            \bigskip
+
+            \bg{cvgreen}{white}{Interesses}\\[0.5em]
+
+            Volleybal \& Boulderen\\
+            Microcontrollers\\
+            3D Modeling\\
+            Self hosting
 
 
-\thispagestyle{empty}
-%-------------------------------------------------------------
+            \vspace{4em}
 
-\section*{Start}
+            \infobubble{\faGithub}{cvgreen}{white}{\href{https://github.com/MelvinQM}{MelvinQM}}
+            \infobubble{\faGlobe}{cvgreen}{white}{\href{https://melvinmoes.com}{melvinmoes.com}}
 
-\simpleheader{headercolour}{}{Melvin Moes}{}{white}
+            \phantom{turn the page}
+            \phantom{turn the page}
+        }
+        %-----------------------------------------------------------
+        \switchcolumn
 
+        \small
 
+        \begin{minipage}[t]{0.48\textwidth}
+            \section*{Opleiding}
+            \begin{tabular}{r p{0.65\textwidth} c}
+                \cvdegree{22-26}{\textbf{HBO Bachelor} --- Technische Informatica}{Verwachte 
+                afstudeerdatum: juli 2026}{Amsterdam \color{headerblue}}{}{assets/images/hva.png} \\
+            \end{tabular}
 
-%------------------------------------------------
-
-% this has to be here so the paracols starts..
-\subsection*{}
-\vspace{4em}
-
-\setlength{\columnsep}{1.5cm} %space between body and 
-\columnratio{0.23}[0.75]
-\begin{paracol}{2}
-\hbadness5000
-\paracolbackgroundoptions
-
-\footnotesize
-{\setasidefontcolour
-\flushright
-\begin{center}
-    \roundpic{assets/images/melvin.png}
-\end{center}
-
-\bg{cvgreen}{white}{Over mij}\\[0.5em]
-
-{\footnotesize
-    Ik ben erg leergierig en enthousiast over ICT. Ik ben altijd op zoek naar nieuwe technologieën 
-    en tools om mijn vaardigheden verder te ontwikkelen. Mijn interesse ligt vooral bij embedded programmeren, 
-    maar ook softwareontwikkeling in het algemeen spreekt mij erg aan.
-}
-\bigskip
-
-\bg{cvgreen}{white}{Personalia} \\[0.5em]
-Melvin Moes
-Nederlands
-18-07-2001
-
-\bigskip
-
-\bg{cvgreen}{white}{Specialisaties} \\[0.5em]
-
-Backend development \\ Embedded programming \\ Web development 
-
-\bigskip
-
-\bigskip
-
-\bg{cvgreen}{white}{Interesses}\\[0.5em]
-
-Volleybal \& Boulderen\\
-Microcontrollers\\
-3D Modeling\\
-Self hosting
+            \section*{Certificaten}
+            \begin{tabular}{>{\footnotesize\bfseries}r >{\footnotesize}p{0.55\textwidth}}
+                2022 & \textbf{Cum laude} --- HBO-ICT Technische Informatica Propedeuse \\
+            \end{tabular}
+            \bigskip
+        \end{minipage}\hfill
+        \begin{minipage}[t]{0.2\textwidth}
+            \section*{Programming}
+            \begin{itemize}
+                \item C/C++
+                \item C\#
+                \item Python
+                \item Typescript
+                \item SQL
+                \item PHP
+                \item Java
+            \end{itemize}
+        \end{minipage}
 
 
-\vspace{4em}
+        \section*{Werk ervaring}
+        \begin{tabular}{r| p{0.5\textwidth} c}
+            \cvevent{08/23--Heden}{Research \& Development -- Chipsoft}{Fullstack -- Parttime}{Amsterdam \color{cvred}}{Ontwikkeld aan 
+            diverse webapplicaties en actief bijgedragen aan code reviews binnen het team.
+            
+            Ik heb onder andere gewerkt met \textbf{C\#} en \textbf{Blazor}. 
+            Daarnaast heb ik ervaring opgedaan met fundamentele softwarearchitectuurprincipes, 
+            waaronder \textbf{Domain-Driven Design (DDD)} en \textbf{Clean Architecture.}
 
-\infobubble{\faGithub}{cvgreen}{white}{\href{https://github.com/MelvinQM}{MelvinQM}}
-\infobubble{\faGlobe}{cvgreen}{white}{\href{https://melvinmoes.com}{melvinmoes.com}}
+            \par\vspace{0.5em}
+            \textbf{Stageperiode (02/26--06/26):} Tijdens mijn stage binnen ChipSoft heb ik mij 
+            gericht op het ontwikkelen van een geavanceerde zoekoplossing met behulp van 
+            \textbf{Elasticsearch}. Hiervoor heb ik een volledige containerized deployment ontworpen met \textbf{Docker}, 
+            inclusief een ingestion pipeline die met behulp van machine learning-technieken 
+            semantic search mogelijk maakte.}{assets/images/chipsoft.png} \\
+            
+            \cvevent{02/24--07/24}{Research \& Development -- Van Berge Henegouwen}{Stagair -- Fulltime}{Amsterdam \color{cvred}}{Tijdens mijn 
+            stage heb ik gewerkt aan het maken van een product van begin tot eind. Ik heb hier gewerkt aan 3D graphics met \textbf{Three.js}, 
+            webdevelopment met \textbf{Vue.js} en \textbf{Typescript} en embedded programmeren met gebruik van het \textbf{Arduino framework}}{vbh.png} \\
+            
+            \cvevent{01/20--Heden}{Helpdesk/Administratie -- Compuclub}{Parttime}{Zaandam \color{cvred}}{Mijn bezigheden bij 
+            Compuclub zijn het bijhouden van al het mailverkeer, factureren en het ontwikkelen van applicaties voor het ondersteuenen van de helpdesk
+            in \textbf{PHP}}{assets/images/compuclub.png} \\
+        \end{tabular}
+        \vspace{3em}
 
-\phantom{turn the page}
+        \bigskip
+        \bigskip
 
-\phantom{turn the page}
-}
-%-----------------------------------------------------------
-\switchcolumn
+        \begin{minipage}[t]{0.3\textwidth}
+            \vspace{0pt}
+            \section*{Talen}
 
-\small
+            \begin{tabular}{l | ll}
+                \textbf{Nederlands} & {\footnotesize Moedertaal} \\
+                \textbf{Engels}     & {\footnotesize Vloeiend} \\
+            \end{tabular}
+            \bigskip
 
-\begin{minipage}[t]{0.48\textwidth}
-    \section*{Opleiding}
-    \begin{tabular}{r p{0.65\textwidth} c}
-        \cvdegree{22-26}{\textbf{HBO Bachelor} --- Technische Informatica}{Verwachte 
-        afstudeerdatum: juli 2026}{Amsterdam \color{headerblue}}{}{assets/images/hva.png} \\
-    \end{tabular}
+            \section*{Overige skills}
+            \begin{itemize}
+                \item Computer vision
+                \item Linux
+                \item Fusion 360 \& Blender
+            \end{itemize}
+        \end{minipage}
+        \hfill
+        \begin{minipage}[t]{0.3\textwidth}
+            \vspace{0pt}
+            \section*{Tools \& Frameworks}
+            \begin{itemize}
+                \item Arduino framework
+                \item Espressif IDF
+                \item Git
+                \item Docker \& Docker Compose
+                \item Blazor / .NET
+                \item React
+                \item Elasticsearch
+            \end{itemize}
+        \end{minipage}
 
-    \section*{Certificaten}
-    \begin{tabular}{>{\footnotesize\bfseries}r >{\footnotesize}p{0.55\textwidth}}
-        2022 & \textbf{Cum laude} --- HBO-ICT Technische Informatica Propedeuse \\
-    \end{tabular}
-    \bigskip
-\end{minipage}\hfill
-\begin{minipage}[t]{0.2\textwidth}
-    \section*{Programming}
-    \begin{itemize}
-        \item C/C++
-        \item C\#
-        \item Python
-        \item Typescript
-        \item SQL
-        \item PHP
-        \item Java
-    \end{itemize}
-\end{minipage}
-
-
-\section*{Werk ervaring}
-\begin{tabular}{r| p{0.5\textwidth} c}
-    \cvevent{08/23--Heden}{Research \& Development -- Chipsoft}{Fullstack -- Parttime}{Amsterdam \color{cvred}}{Ontwikkeld aan 
-    diverse webapplicaties en actief bijgedragen aan code reviews binnen het team.
-    
-    Ik heb onder andere gewerkt met \textbf{C\#} en \textbf{Blazor}. 
-    Daarnaast heb ik ervaring opgedaan met fundamentele softwarearchitectuurprincipes, 
-    waaronder \textbf{Domain-Driven Design (DDD)} en \textbf{Clean Architecture.}
-
-    \par\vspace{0.5em}
-    \textbf{Stageperiode (02/26--06/26):} Tijdens mijn stage binnen ChipSoft heb ik mij 
-    gericht op het ontwikkelen van een geavanceerde zoekoplossing met behulp van 
-    \textbf{Elasticsearch}. Hiervoor heb ik een volledige containerized deployment ontworpen met \textbf{Docker}, 
-    inclusief een ingestion pipeline die met behulp van machine learning-technieken 
-    semantic search mogelijk maakte.}{assets/images/chipsoft.png} \\
-    
-    \cvevent{02/24--07/24}{Research \& Development -- Van Berge Henegouwen}{Stagair -- Fulltime}{Amsterdam \color{cvred}}{Tijdens mijn 
-    stage heb ik gewerkt aan het maken van een product van begin tot eind. Ik heb hier gewerkt aan 3D graphics met \textbf{Three.js}, 
-    webdevelopment met \textbf{Vue.js} en \textbf{Typescript} en embedded programmeren met gebruik van het \textbf{Arduino framework}}{vbh.png} \\
-    
-    \cvevent{01/20--Heden}{Helpdesk/Administratie -- Compuclub}{Parttime}{Zaandam \color{cvred}}{Mijn bezigheden bij 
-    Compuclub zijn het bijhouden van al het mailverkeer, factureren en het ontwikkelen van applicaties voor het ondersteuenen van de helpdesk
-    in \textbf{PHP}}{assets/images/compuclub.png} \\
-\end{tabular}
-\vspace{3em}
-
-\bigskip
-\bigskip
-
-\begin{minipage}[t]{0.3\textwidth}
-    \vspace{0pt}
-    \section*{Talen}
-
-    \begin{tabular}{l | ll}
-        \textbf{Nederlands} & {\footnotesize Moedertaal} \\
-        \textbf{Engels}     & {\footnotesize Vloeiend} \\
-    \end{tabular}
-    \bigskip
-
-    \section*{Overige skills}
-    \begin{itemize}
-        \item Computer vision
-        \item Linux
-        \item Fusion 360 \& Blender
-    \end{itemize}
-\end{minipage}
-\hfill
-\begin{minipage}[t]{0.3\textwidth}
-    \vspace{0pt}
-    \section*{Tools \& Frameworks}
-    \begin{itemize}
-        \item Arduino framework
-        \item Espressif IDF
-        \item Git
-        \item Docker \& Docker Compose
-        \item Blazor / .NET
-        \item React
-        \item Elasticsearch
-    \end{itemize}
-\end{minipage}
-
-\bigskip
-\bigskip
+        \bigskip
+        \bigskip
 
 
 
-\vfill{} % Whitespace before final footer
+        \vfill{} % Whitespace before final footer
 
-%----------------------------------------------------------------------------------------
-%	FINAL FOOTER
-%----------------------------------------------------------------------------------------
-\setlength{\parindent}{0pt}
-\begin{minipage}[t]{\leftcolwidth}
-\end{minipage}%
-\begin{minipage}[t]{\rightcolwidth}
-\begin{center}\fontfamily{\sfdefault}\selectfont \color{black!70}
-{\small Melvin Moes \icon{\faEnvelopeO}{cvgreen}{} melv5@live.nl \icon{\faMapMarker}{cvgreen}{} Zaandam \icon{\faPhone}{cvgreen}{} +31 611279601} \\
-\icon{\faAt}{cvgreen}{} \url{https://www.linkedin.com/in/melvin-moes-49652a290/}
-\end{center}
-\end{minipage}
-\end{paracol}
+        %----------------------------------------------------------------------------------------
+        %	FINAL FOOTER
+        %----------------------------------------------------------------------------------------
+        \setlength{\parindent}{0pt}
+        \begin{minipage}[t]{\leftcolwidth}
+        \end{minipage}%
+        \begin{minipage}[t]{\rightcolwidth}
+        \begin{center}\fontfamily{\sfdefault}\selectfont \color{black!70}
+        {\small Melvin Moes \icon{\faEnvelopeO}{cvgreen}{} melv5@live.nl \icon{\faMapMarker}{cvgreen}{} Zaandam \icon{\faPhone}{cvgreen}{} +31 611279601} \\
+        \icon{\faAt}{cvgreen}{} \url{https://www.linkedin.com/in/melvin-moes-49652a290/}
+        \end{center}
+        \end{minipage}
+    \end{paracol}
 \end{document}
